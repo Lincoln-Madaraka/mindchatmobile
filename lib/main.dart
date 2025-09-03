@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
+import 'screens/signup_screen.dart';
+import 'screens/login_screen.dart';
+
 void main() {
   runApp(const MindChatApp());
 }
@@ -115,7 +118,11 @@ class LandingScreen extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {
-                  // TODO: Navigate to SignupScreen
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SignupScreen()),
+                  );
                 },
                 child: Text(
                   'Sign Up',
