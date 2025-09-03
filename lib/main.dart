@@ -159,7 +159,33 @@ class LandingScreen extends StatelessWidget {
 
             // Login Link
             GestureDetector(
-             
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const LoginScreen()),
+                );
+              },
+              child: RichText(
+                text: TextSpan(
+                  text: 'Already have an account? ',
+                  style: GoogleFonts.nunito(
+                    fontSize: 14,
+                    color: Colors.white70,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Log In',
+                      style: GoogleFonts.nunito(
+                        fontSize: 14,
+                        color: Colors.cyanAccent,
+                        decoration: TextDecoration.underline,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
 
             const SizedBox(height: 40),
