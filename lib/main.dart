@@ -102,8 +102,6 @@ class LandingScreen extends StatelessWidget {
               ],
             ),
 
-            const Spacer(),
-
             // Sign Up Button
             SizedBox(
               width: 220,
